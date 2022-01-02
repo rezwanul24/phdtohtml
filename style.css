@@ -1,0 +1,311 @@
+/*=======================
+common css
+=========================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    color: #878787;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+    
+}
+
+/*=======================
+Top Header css
+=========================*/
+
+.header_area {
+    width: 100%;
+    clear: both;
+}
+
+#top_header_area {
+    background-color: #ba2e1f;
+    width: 100%;
+    padding: 15px 0;
+
+}
+
+.inner_top_header{
+    overflow: hidden;
+}
+
+.mini_menu{
+    float: left;
+    width:70%;
+}
+
+.mini_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    margin-top: 5px;
+    
+}
+
+.mini_menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.mini_menu ul li::after {
+    content: "";
+    background: white;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    right: -10px;
+}
+
+.mini_menu ul li:last-child:after {
+    display: none;
+}
+
+
+
+.mini_menu ul li a {
+    text-decoration: none;
+    color:white;
+    display: block;
+    font-size: 14px;
+}
+
+.mini_menu ul li a:hover {
+    color:black;
+    display: block;
+    transition: 1.5em;
+    
+}
+
+.search_area {
+    float: right;
+    width: 30%; 
+}
+
+.search_area form{
+    width: 98%;
+    max-width: 210px;
+    background-color: #fff; 
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+}
+
+.search_area input{
+    border: 0px solid;
+    width: 75%;
+    float: left;
+    padding: 1%;
+    color:black;
+}
+
+.search_area input[type="submit"]{
+    border: 0px solid;
+    width: 23%;
+    background: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+/*=======================
+Main Header css
+=========================*/
+
+.main_header_area {
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+
+}
+
+.logo_and_social_link_area {
+    overflow: hidden;
+}
+
+.logo_area {
+    width: 240;
+    float: left;
+}
+
+.social_link_area {
+    
+    float: right;
+    width: 100%;
+    max-width: 600px;
+}
+
+.social_link_area ul {
+    text-align: right;
+    list-style: none;
+}
+
+.social_link_area ul li{
+    display: inline-block;
+    
+    
+}
+
+.social_link_area ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 0px 10px;
+    
+}
+
+.social_link_area ul li a i{   
+    background: #333333;
+    color: white;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 8px;
+}
+
+.social_link_area ul li a:hover i{   
+    background: gold;
+    transition: 1.5em;
+}
+
+
+/*=======================
+Main Menu css
+========================*/
+
+.main_menu {
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu {
+    width: 100%;
+    background-color: #ba2e1f;
+}
+
+.main_menu ul{
+    list-style: none;
+    text-align: center;
+}
+.main_menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 15px;
+    position: relative;
+}
+.main_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.main_menu ul li:hover{
+    background-color: #000;
+}
+
+.main_menu ul ul{
+    position: absolute;
+    background-color: #ba2e1f;
+    width: 100px;
+    left: 0px;
+    top: 45px;
+    display: none;
+}
+
+.main_menu ul ul li{
+    display: block;
+    margin: 0;
+    
+}
+
+.main_menu ul ul ul {
+    left: 100px;
+    display: none;
+    top:0px;
+}
+
+.main_menu ul li:hover ul{
+    display: block;
+    z-index: 999;
+   
+}
+
+.main_menu ul li:hover ul ul{
+    display: none;
+}
+
+.main_menu ul ul li:hover ul{
+    display: block;
+}
+
+/*=======================
+Hero area css
+=========================*/
+
+.hero_area{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.inner_hero{
+    overflow: hidden;
+}
+
+.inner_hero h2{
+    color: #000;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.inner_hero p{}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    text-transform: uppercase;
+}
+
+/*=======================
+Work area
+=========================*/
+
+.work{
+    width: 33%;
+    display: inline-block;
+}
